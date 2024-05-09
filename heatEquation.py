@@ -7,7 +7,7 @@ size_y = 100
 
 h = 0.2
 dt = 0.001
-alpha = 2.5
+alpha = 2
 
 T = np.zeros((size_x,size_y))
 
@@ -33,14 +33,15 @@ for step in range(1000000):
     
     
     
-    for i in range(10):
-        T[i+45][45] = 0
-        T[i+45][55] = 0
+    # for i in range(10):
+        # T[i+45][45] = 0
+        # T[i+45][55] = 0
         
     
     print(np.sum(T))
     #print(step)
     plt.imshow(T,cmap="hot")
+    #plt.plot(T[1][:])
     plt.show()
     plt.pause(0.001)
     plt.clf()      
