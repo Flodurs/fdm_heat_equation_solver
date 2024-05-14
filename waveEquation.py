@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+from heatEquation import T_buf
 
 size_x = 100
 size_y = 100
